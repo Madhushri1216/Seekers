@@ -1,0 +1,631 @@
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Seeker</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/web/img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/web/css/style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Search Form -->
+        <div class="search-form d-flex align-items-center">
+            <div class="container">
+                <form action="index.html" method="get">
+                    <input type="search" name="search-form-input" id="searchFormInput"
+                        placeholder="Type your keyword ...">
+                    <button type="submit"><i class="icon_search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="robertoNav">
+
+                        <!-- Logo -->
+                        <!-- <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a> -->
+                        <div class="mt-3 widget-title ">
+                            <p class="text-dark"><p class="text-dark"><img src="/static/web/img/logo.png" style="height: 70px !important; width: 110px;"></p></p>
+                        </div>
+
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="/index/">Home</a></li>
+                                    <li><a href="/about/">About Us</a></li>
+                                    <li><a href="/university/">University</a></li>
+                                    <li><a href="/institution/">Institution</a></li>
+                                    <li><a href="/contact/">Contact</a></li>
+                                    <li><a href="/login/">Login</a></li>
+                                    <li><a href="/logout_web/">Logout</a></li>
+                                </ul>
+
+                                
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(/static/web/img/bg_3.jpg);"
+                data-img-url="img/bg_1.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInLeft" data-delay="200ms">Institution</h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(/static/web/img/bg_2.jpg);"
+                data-img-url="img/bg_3.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInUp" data-delay="200ms">Institution</h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(/static/web/img/bg_1.jpg);"
+                data-img-url="img/bg_2.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInDown" data-delay="200ms">Institution</h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+
+    <!-- start -->
+    <section class="container mt-5">
+        <!-- <div class="d-flex justify-content-center">
+            <ul class="nav nav-tabs  border border-info justify-content-between bg-info" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">VTU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">RCUB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Autonomous</a>
+                </li>
+            </ul>
+        </div> -->
+        <div class="tab-content text-center" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <!-- Service Area Start -->
+                <section class="roberto-service-area section-padding-100-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Section Heading -->
+                                <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                                    <h6>Ultimate Solutions</h6>
+                                    <h2>Institution</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <!-- <img src="/static/web/img/vtu1.jpeg" alt=""> -->
+                        </div>
+
+                        <div class="row" id="products">
+                            
+                        </div>
+                </section>
+                <!-- Service Area End -->
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="display: none;">
+                <!-- Service Area Start -->
+                <section class="roberto-service-area section-padding-100-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Section Heading -->
+                                <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                                    <h6>Ultimate Solutions</h6>
+                                    <h2>Our Universities &amp; Colleges</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <img src="/static/web/img/rcub1.png" alt="">
+                        </div>
+
+                        <div class="row">
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                    <img src="/static/web/img/clg10.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#profile" class="btn project-btn text-white">Bharatesh
+                                            College,Bengaloru. <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                    <img src="/static/web/img/rcub.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#profile" class="btn project-btn text-white">RCU college,Belgavi. <br>
+                                            Take Admission <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                                    <img src="/static/web/img/bkclg.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#profile" class="btn project-btn text-white">BK College, Chikodi. <br>
+                                            Take Admission <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                    <img src="/static/web/img/kle_clg.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#profile" class="btn project-btn text-white">CLE College,Chikodi. <br>
+                                            Take Admission <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                    <img src="/static/web/img/rls1.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#profile" class="btn project-btn text-white">RLS College, Belgavi. <br>
+                                            Take Admission <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                                    <img src="/static/web/img/srp.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#profile" class="btn project-btn text-white">KLE College,Shirguppi.
+                                            <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Service Area End -->
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <!-- Service Area Start -->
+                <section class="roberto-service-area section-padding-100-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Section Heading -->
+                                <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                                    <h6>Ultimate Solutions</h6>
+                                    <h2>Our Universities &amp; Colleges</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <img src="/static/web/img/autonomous.jpg" alt="" style="width: 900px;">
+                        </div>
+
+                        <div class="row">
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                    <img src="/static/web/img/autonomous1.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Raja Lakhan
+                                            College,Bengaloru. <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                    <img src="/static/web/img/clg3.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Gogte College,Belgavi.
+                                            <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                                    <img src="/static/web/img/autonomous2.png" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Bharti College,Bagalkot.
+                                            <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                    <img src="/static/web/img/autonomous4.png" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">BIMS College, Belgavi.
+                                            <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                    <img src="/static/web/img/autonomous6.avif" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">RLS College,Belgavi. <br>
+                                            Take Admission <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                                    <img src="/static/web/img/autonomous5.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Army Institute Of
+                                            Technology,Hubhali. <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Service Area End -->
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+
+
+
+    <!-- Video Area Start -->
+    <!-- <div class="roberto--video--area bg-img bg-overlay jarallax section-padding-0-100" style="background-image: url(img/bg-img/20.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-md-6">
+                    Section Heading -->
+    <!-- <div class="section-heading text-center white wow fadeInUp" data-wow-delay="100ms">
+                        <h6>Ultimate Solutions</h6>
+                        <h2>Our Hotel &amp; Room</h2>
+                    </div>
+                    <div class="video-content-area mt-100 wow fadeInUp" data-wow-delay="500ms">
+                        <a href="https://www.youtube.com/watch?v=Ldd8yjjo6jA" class="video-play-btn"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Video Area End -->
+
+    <!-- Service Area Start -->
+    <!-- <section class="roberto-service-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"> -->
+    <!-- Section Heading -->
+    <!-- <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h6>Ultimate Solutions</h6>
+                        <h2>Our Universities &amp; Colleges</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"> -->
+    <!-- Single Service Area -->
+    <!-- <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <img src="img/clg10.jpg" alt="" style="height: 350px ;">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn project-btn text-white">Take Admission <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- Single Service Area -->
+    <!-- <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <img src="img/clg3.jpg" alt="" style="height: 350px ;">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn project-btn text-white">Take Admission <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- Single Service Area -->
+    <!-- <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <img src="img/clg6.jpg" alt="" style="height: 350px ;">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn project-btn text-white">Take Admission <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"> -->
+    <!-- Single Service Area -->
+    <!-- <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <img src="img/clg8.jpg" alt="" style="height: 350px ;">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn project-btn text-white">Take Admission <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- Single Service Area -->
+    <!-- <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <img src="img/clg9.jpeg" alt="" style="height: 350px ;">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn project-btn text-white">Take Admission <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- Single Service Area -->
+    <!-- <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <img src="img/clg2.jpg" alt="" style="height: 350px ;">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn project-btn text-white">Take Admission <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Service Area End -->
+
+    <!-- Call To Action Area Start -->
+    <section class="roberto-cta-area mt-5 mb-5" style="display: none;">
+        <div class="container">
+            <div class="cta-content bg-img bg-overlay jarallax"
+                style="background-image: url(/static/web/img/bg-img/1.jpg);">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-7">
+                        <div class="cta-text mb-50">
+                            <h2>Contact us now!</h2>
+                            <h6>Contact +9045769035 </h6>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 text-right">
+                        <a href="/contact/" class="btn roberto-btn mb-50">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Area End -->
+
+
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row align-items-baseline justify-content-between">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Footer Logo -->
+                            <!-- <a href="#" class="footer-logo"><img src="img/core-img/logo2.png" alt=""></a> -->
+                            <div class="mt-3 fw-bold">
+                                <p class="widget-title">Seeker</p>
+                            </div>
+
+                            <h4>+9045769035</h4>
+                            <span>seeker@gmail.com</span>
+                            <span>RPD Cross,Belagavi,Karnataka</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-8 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Universities</h5>
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>RCUB</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>VTU</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Autonomous</a></li>
+                                <!-- <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Links</h5>
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> About Us</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> University</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a></li>
+                                <!-- <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-8">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Seeker <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <!-- <a
+                                href="https://colorlib.com" target="_blank"></a> -->
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="/static/web/js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="/static/web/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/static/web/js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="/static/web/js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="/static/web/js/default-assets/active.js"></script>
+    <!-- <script src="/static/web/js/get_home_details"></script> -->
+    <!-- <script src="/static/web/js/get_home_details"></script> -->
+
+</body>
+    <script type="text/javascript">
+
+    getData();
+    function getData() {
+
+            var formData = new FormData();
+            formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+
+            $.ajax({
+
+              url: "/get_institution_details/",
+              type: "POST",
+              data: formData,
+              processData: false,
+              contentType: false,
+              success: function(response) {
+
+                for(var i = 0; i < response.length; i++) {
+                    var imgSub = response[i].in_image.substring(3);
+
+                    $("#products").append('<div class="col-12 col-md-6 col-lg-4"> <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms"> <img src="'+imgSub+'" alt="" style="height: 350px ;"> <div class="service-title d-flex align-items-center justify-content-center"> <a href="#home" class="btn project-btn text-white">'+response[i].in_name+' </a><a href="/single_institution?id='+response[i].in_email+'" style="color: black; background-color: white;">View Details </a></div></div></div>');
+                }
+
+              }
+
+            });
+        }
+</script>
+</html>

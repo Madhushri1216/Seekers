@@ -1,0 +1,908 @@
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Seeker</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/web/img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/static/web/css/style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Search Form -->
+        <div class="search-form d-flex align-items-center">
+            <div class="container">
+                <form action="index.html" method="get">
+                    <input type="search" name="search-form-input" id="searchFormInput"
+                        placeholder="Type your keyword ...">
+                    <button type="submit"><i class="icon_search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="robertoNav">
+
+                        <!-- Logo -->
+                        <!-- <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a> -->
+                        <div class="mt-3 widget-title ">
+                            <p class="text-dark"><p class="text-dark"><img src="/static/web/img/logo.png" style="height: 70px !important; width: 110px;"></p></p>
+                        </div>
+
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="/index/">Home</a></li>
+                                    <li><a href="/about/">About Us</a></li>
+                                    <li><a href="/university/">University</a></li>
+                                    <li><a href="/institution/">Institution</a></li>
+                                    <li><a href="/contact/">Contact</a></li>
+                                    <li><a href="/login/">Login</a></li>
+                                    <li><a href="/logout_web/">Logout</a></li>
+                                </ul>
+
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(/static/web/img/bg_3.jpg);"
+                data-img-url="img/bg_1.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInLeft" data-delay="200ms">Colleges</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(/static/web/img/bg_2.jpg);"
+                data-img-url="img/bg_3.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInUp" data-delay="200ms">Colleges</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(/static/web/img/bg_1.jpg);"
+                data-img-url="img/bg_2.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInDown" data-delay="200ms">Colleges</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+
+    <!-- start -->
+    <section class="container mt-5">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <!-- Service Area Start -->
+                <section class="roberto-service-area section-padding-100-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Section Heading -->
+                                <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                                    <h6>Ultimate Solutions</h6>
+                                    <h2 id="collegeName">Colleges</h2>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Apply
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="mb-5 col-md-6">
+                                <img src="/static/web/img/vtu1.jpeg" id="collegeImage" height="200" alt="">
+                            </div>
+
+                            <div class="mb-5 col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-text text-left"><b>Mobile : </b><span id="mobile">s</span></p>
+
+                                        <p class="card-text text-left"><b>Email : </b><span id="email"></span></p>
+
+                                        <p class="card-text text-left"><b>Address : </b><span id="address"></span></p>
+
+                                        <p class="card-text text-left"><b>About : </b><span id="about"></span></p>
+
+                                        <p class="card-text text-left"><b>University : </b><span id="university"></span>
+                                        </p>
+                                        <p class="card-text text-left"><b>Rank : </b><span id="rank"></span></p>
+                                        <p class="card-text text-left"><b>NAAC grade : </b><span id="naac"></span></p>
+                                        <b class="rating">RATING : 4.5</b>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <h3 class="text-center">Course Details</h3>
+                        </div>
+
+                        <div class="row text-center" id="course">
+
+                        </div>
+
+                        <div>
+                            <h3 class="text-center">Staff Details</h3>
+                        </div>
+
+                        <div class="row text-center" id="staff">
+
+                        </div>
+
+                        <br>
+                        <br>
+
+                </section>
+                <!-- Service Area End -->
+            </div>
+            <section>
+                <div class="container">
+                    <div>
+                      
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-12">
+                                <br><br>
+                                <h1 class="">Submit Your Reviews</h1>
+                                <hr>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="card" style="width: 30rem; border: none!important;">
+                                    <div class="col">
+                                        <label>Name</label>
+                                        <input type="text" id="txtname" class="form-control">
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Email</label>
+                                        <input type="text" id="txtemail" class="form-control">
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Message</label>
+                                        <textarea id="txtmessage" class="form-control"></textarea>
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Rating</label>
+                                        <select id="selRating" class="form-control">
+                                            <option value="">Please Select Rating</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <br>
+                                        <button type="button" id="btn_add" class="btn btn-primary">Submit</button>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <br><br>
+                                <h1 class="">Reviews</h1>
+                                <hr>
+                            </div>
+
+                            <div class="col-sm-12" id="showReview">
+
+                            </div>
+                        </div>
+                       
+                    </div>
+            </section>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <!-- Service Area Start -->
+                <section class="roberto-service-area section-padding-100-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Section Heading -->
+                                <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                                    <h6>Ultimate Solutions</h6>
+                                    <h2>Our Universities &amp; Colleges</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <img src="/static/web/img/autonomous.jpg" alt="" style="width: 900px;">
+                        </div>
+
+                        <div class="row">
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                    <img src="/static/web/img/autonomous1.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Raja Lakhan
+                                            College,Bengaloru. <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                    <img src="/static/web/img/clg3.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Gogte College,Belgavi.
+                                            <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                                    <img src="/static/web/img/autonomous2.png" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Bharti College,Bagalkot.
+                                            <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                    <img src="/static/web/img/autonomous4.png" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">BIMS College, Belgavi.
+                                            <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                    <img src="/static/web/img/autonomous6.avif" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">RLS College,Belgavi. <br>
+                                            Take Admission <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Service Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                                    <img src="/static/web/img/autonomous5.jpg" alt="" style="height: 350px ;">
+                                    <div class="service-title d-flex align-items-center justify-content-center">
+                                        <a href="#contact" class="btn project-btn text-white">Army Intitute Of
+                                            Technology,Hubhali. <br> Take Admission <i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Service Area End -->
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <input type="hidden" id="txtID" value="{{request.GET.id}}">
+
+    <!-- Call To Action Area Start -->
+    <section class="roberto-cta-area mt-5 mb-5" style="display: none;">
+        <div class="container">
+            <div class="cta-content bg-img bg-overlay jarallax"
+                style="background-image: url(/static/web/img/bg-img/1.jpg);">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-7">
+                        <div class="cta-text mb-50">
+                            <h2>Contact us now!</h2>
+                            <h6>Contact +9045769035 </h6>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 text-right">
+                        <a href="/contact/" class="btn roberto-btn mb-50">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Area End -->
+
+
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row align-items-baseline justify-content-between">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Footer Logo -->
+                            <!-- <a href="#" class="footer-logo"><img src="img/core-img/logo2.png" alt=""></a> -->
+                            <div class="mt-3 fw-bold">
+                                <p class="widget-title">Seeker</p>
+                            </div>
+
+                            <h4>+9045769035</h4>
+                            <span>seeker@gmail.com</span>
+                            <span>RPD Cross,Belagavi,Karnataka</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-8 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Universities</h5>
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>RCUB</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>VTU</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Autonomous</a></li>
+                                <!-- <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Links</h5>
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> About Us</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> University</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a></li>
+                                <!-- <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-8">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Seeker
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <!-- <a
+                                href="https://colorlib.com" target="_blank"></a> -->
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Request For Admission</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-12 form-group">
+                            <select id="selSeatType" class="form-control">
+                                <option value="">Please Select Seat Type</option>
+                                <option value="Government">Government</option>
+                                <option value="Management">Management</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <!-- <label>Department</label> -->
+                            <select id="selDepartment" class="form-control">
+                                <option value="">Please Select Department</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Name</label>
+                            <input type="text" id="txtName" class="form-control" onkeypress="return alphaOnly(event);">
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Mobile</label>
+                            <input type="text" id="txtMobileNo" class="form-control" maxlength="10"
+                                onkeypress="return isNumberKey(event);">
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Email</label>
+                            <input type="text" id="txtEmail" class="form-control">
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Address</label>
+                            <input type="text" id="txtAddress" class="form-control">
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Previous Education</label>
+                            <input type="text" id="txtPrevEducation" class="form-control">
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Previous Percentage</label>
+                            <input type="text" id="txtPrevPercentage" class="form-control">
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Year of Passing</label>
+                            <input type="text" id="txtYearPassing" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="btn_submit">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End -->
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="/static/web/js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="/static/web/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/static/web/js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="/static/web/js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="/static/web/js/default-assets/active.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- <script src="/static/web/js/get_home_details"></script> -->
+
+</body>
+<script type="text/javascript">
+
+    getData();
+    getWebCourseDetails();
+    getWebStaffDetails();
+    function getData() {
+
+        var formData = new FormData();
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+        formData.append("txtID", $("#txtID").val());
+
+        $.ajax({
+
+            url: "/get_web_college_details/",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                var imgSub = response[0].cl_image.substring(3);
+                $("#collegeName").text(response[0].cl_name);
+                $("#collegeImage").attr('src', imgSub);
+                $("#mobile").text(response[0].cl_mobile);
+                $("#email").text(response[0].cl_email);
+                $("#address").text(response[0].cl_address);
+                $("#about").text(response[0].cl_about);
+                $("#university").text(response[0].cl_university_name);
+                $("#rank").text(response[0].cl_rank);
+                $("#naac").text(response[0].cl_naac);
+
+
+            }
+
+        });
+    }
+
+    function getWebCourseDetails() {
+
+        var formData = new FormData();
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+        formData.append("txtID", $("#txtID").val());
+
+        $.ajax({
+
+            url: "/get_web_course_details/",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+
+                for (var i = 0; i < response.length; i++) {
+                    // var imgSub = response[i].cl_image.substring(3);
+
+                    $("#course").append('<div class="card" style="margin: 5px;"> <div class="col-12"> <div class="card-body"> <p class="card-text text-left">Course Name : ' + response[i].cd_name + '</p><p class="card-text text-left">Fees : ' + response[i].cd_fees + '</p><p class="card-text text-left">Total Government Seats : ' + response[i].cd_total_seats_gov + '</p><p class="card-text text-left">Available Government Seats : ' + response[i].cd_available_seats_gov + '</p>    <p class="card-text text-left">Total Management Seats : ' + response[i].cd_total_seats_mng + '</p><p class="card-text text-left">Available Management Seats : ' + response[i].cd_available_seats_mng + '</p></div></div></div>');
+                    $("#selDepartment").append('<option value=' + response[i].cd_name + '>' + response[i].cd_name + '</option>');
+                }
+
+            }
+
+        });
+    }
+
+    function getWebStaffDetails() {
+
+        var formData = new FormData();
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+        formData.append("txtID", $("#txtID").val());
+
+        $.ajax({
+
+            url: "/get_web_staff_details/",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+
+                for (var i = 0; i < response.length; i++) {
+                    // var imgSub = response[i].cl_image.substring(3);
+
+                    $("#staff").append('<div class="card" style="margin: 5px;"> <div class="col-12"> <div class="card-body"> <p class="card-text text-left">Staff Name : ' + response[i].cs_name + '</p><p class="card-text text-left">Department : ' + response[i].cs_department + '</p><p class="card-text text-left">Designation : ' + response[i].cs_designation + '</p></div></div></div>');
+                }
+
+            }
+
+        });
+    }
+
+
+    function validateEmail(paramEmailID) {
+        var filter = /^[0-9a-z.]+\@[a-z0-9]+\.[a-zA-z0-9]{2,4}$/;
+
+        if (filter.test(paramEmailID)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function alphaOnly(event) {
+        var key = event.which ? event.which : event.keyCode;
+        return (
+            (key >= 65 && key <= 90) ||
+            key == 8 ||
+            (event.charCode >= 97 && event.charCode <= 122) ||
+            event.charCode == 32
+        );
+    }
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+
+    $("#btn_submit").click(function (e) {
+        //verification
+
+        // alert($("#email").text());
+
+        if ($("#selSeatType").val().trim().length < 1) {
+            alert("Please Select Seat type");
+            $("#selSeatType").focus();
+            return false;
+        }
+
+        if ($("#selDepartment").val().trim().length < 1) {
+            alert("Please Select Department");
+            $("#selDepartment").focus();
+            return false;
+        }
+
+        if ($("#txtName").val().trim().length < 1) {
+            alert("Please Enter Full Name");
+            $("#txtName").focus();
+            return false;
+        }
+
+        if ($("#txtMobileNo").val().trim().length < 10) {
+            alert("Please Enter Mobile number");
+            $("#txtMobileNo").focus();
+            return false;
+        }
+
+        if ($("#txtEmail").val().trim().length < 1) {
+            alert("Please Enter Email");
+            $("#txtEmail").focus();
+            return false;
+        }
+        if (!validateEmail($("#txtEmail").val())) {
+            alert("Please Enter valid Email");
+            $("#txtEmail").focus();
+            return false;
+        }
+
+        if ($("#txtAddress").val().trim().length < 1) {
+            alert("Please Enter Address");
+            $("#txtAddress").focus();
+            return false;
+        }
+
+        if ($("#txtPrevEducation").val().trim().length < 1) {
+            alert("Please Enter Latest Education");
+            $("#txtPrevEducation").focus();
+            return false;
+        }
+        if ($("#txtPrevPercentage").val().trim().length < 1) {
+            alert("Please Enter Latest Percentage");
+            $("#txtPrevPercentage").focus();
+            return false;
+        }
+
+        if ($("#txtYearPassing").val().trim().length < 1) {
+            alert("Please Enter Year of Passing");
+            $("#txtYearPassing").focus();
+            return false;
+        }
+
+        var formData = new FormData();
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+        formData.append("selSeatType", $("#selSeatType").val());
+        formData.append("selDepartment", $("#selDepartment").val());
+        formData.append("txtName", $("#txtName").val());
+        formData.append("txtMobileNo", $("#txtMobileNo").val());
+        formData.append("txtEmail", $("#txtEmail").val());
+        formData.append("txtAddress", $("#txtAddress").val());
+        formData.append("txtPrevEducation", $("#txtPrevEducation").val());
+        formData.append("txtPrevPercentage", $("#txtPrevPercentage").val());
+        formData.append("txtYearPassing", $("#txtYearPassing").val());
+        formData.append("txtCollegeEmail", $("#email").text());
+
+
+        $.ajax({
+            beforeSend: function () {
+                // $(".btn .spinner-border").show();
+                $("#btn_submit").attr("disabled", true);
+            },
+            url: "/user_request/",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (result) {
+
+                if (result == "10") {
+                    alert("You are already Requested, Try another college");
+                } else {
+                    alert("Request Successful");
+                    window.location = '/';
+                    // location.reload();
+                }
+
+            },
+            error: function (request, error) {
+                console.error(error);
+            },
+            complete: function () {
+                // $(".btn .spinner-border").hide();
+                $("#btn_submit").attr("disabled", false);
+            },
+        });
+    });
+
+
+
+    $("#btn_add").click(function (e) {
+        //verification
+        if ($("#txtname").val().trim().length < 1) {
+            alert("Please Enter Full Name");
+            $("#txtname").focus();
+            return false;
+        }
+
+        if ($("#txtemail").val().trim().length < 1) {
+            alert("Please Enter Email");
+            $("#txtemail").focus();
+            return false;
+        }
+        if (!validateEmail($("#txtemail").val())) {
+            alert("Please Enter valid Email");
+            $("#txtemail").focus();
+            return false;
+        }
+
+        if ($("#txtmessage").val().trim().length < 1) {
+            alert("Please Enter Review");
+            $("#txtmessage").focus();
+            return false;
+        }
+
+        if ($("#selRating").val().trim().length < 1) {
+            alert("Please Select Rating");
+            $("#selRating").focus();
+            return false;
+        }
+
+        var formData = new FormData();
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+        formData.append("txtname", $("#txtname").val());
+        formData.append("txtemail", $("#txtemail").val());
+        formData.append("txtmessage", $("#txtmessage").val());
+        formData.append("selRating", $("#selRating").val());
+        formData.append("txtID", $("#txtID").val());
+
+        formData.append("action", "add");
+
+        $.ajax({
+            beforeSend: function () {
+                // $(".btn .spinner-border").show();
+                $("#btn_add").attr("disabled", true);
+            },
+            url: "/submit_review/",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (result) {
+                alert("Review added successfully, Thank you!!!");
+                location.reload();
+            },
+            error: function (request, error) {
+                console.error(error);
+            },
+            complete: function () {
+                // $(".btn .spinner-border").hide();
+                $("#btn_add").attr("disabled", false);
+            },
+        });
+    });
+    getReview();
+
+    function getReview() {
+
+        var formData = new FormData();
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+        formData.append("txtID", $("#txtID").val());
+
+
+        $.ajax({
+
+            url: "/get_review/",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                let rating = 0;
+                for (var i = 0; i < response.length; i++) {
+                    $("#showReview").append('<div id="userName" style="font-size: 20px; font-weight: 600;">' + response[i].rv_name + '</div><div id="userReview"><b>Review : </b>' + response[i].rv_message + '</div><div id="userRating"><b>Rating :</b> ' + response[i].rv_rating + '</div><hr>');
+                    rating = rating + parseInt(response[i].rv_rating);
+                }
+                rating = parseFloat(rating / i).toFixed(2);
+                // alert(rating);
+                $(".rating").text("RATING : " + rating);
+
+
+
+            }
+
+        });
+    }
+</script>
+
+</html>
